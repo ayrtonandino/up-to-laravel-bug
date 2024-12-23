@@ -61,7 +61,7 @@
             "@php ./vendor/bin/phpstan analyse --ansi -v"
         ],
         "rector": [
-            "@php ./vendor/bin/rector process --dry-run --ansi"
+            "@php ./vendor/bin/rector process --ansi"
         ],
         "test": [
             "composer stan && composer rector && composer stan"
