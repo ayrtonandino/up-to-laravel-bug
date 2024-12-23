@@ -29,6 +29,7 @@ class StartsWithRule implements ValidationRule, ValidatorAwareRule
     #[Override]
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        // validation logic
+        // Call to an undefined method Illuminate\Contracts\Validation\Validator::getData().
+        $this->validator->getData();
     }
 }
